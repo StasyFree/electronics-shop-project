@@ -76,9 +76,9 @@ def test_phone():
 
 
 def test_add(make_items):
+    phone = Phone('Iphone', 100000, 5, 2)
     item1 = make_items[0]
     item2 = make_items[1]
-    phone = Phone('Iphone', 100000, 5, 2)
     assert item1 + phone == 25
     assert item2 + phone == 10
-    assert phone + 25 == None
+    assert item2 + 100 == None

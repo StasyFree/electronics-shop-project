@@ -3,7 +3,7 @@ from src.item import Item
 
 class MixinLang:
 
-    """Класс для добавления возможности храения языка"""
+    """Класс для добавления возможности храения языка""" 
 
     def __init__(self, name, price, quantity, language="EN"):
         super().__init__(name, price, quantity)
